@@ -6,7 +6,7 @@ public class ForLoop {
         System.out.println(forLoop.powers(100,2));
         System.out.println(forLoop.areaOfSquare(10));
         System.out.println(forLoop.areaOfRectangle(5,2));
-        System.out.println(forLoop.areaOfCircle(0));
+        System.out.println(forLoop.areaOfCircle(7));
     }
     public void printXTimes(int x, String message){
         for(int i = 1; i < x; i++){
@@ -24,9 +24,15 @@ public class ForLoop {
         }
         return result;
     }
-    /* areaOfSquare is a function that takes the length of the side of a square as an input and squares the length to
-    return the area of the square. It also throws an exception when the length of the side is negative, which is not
-    possible */
+
+    /**
+     * areaOfSquare is a function that takes the length of the side of a square as an input and squares the length to
+     * return the area of the square. It also throws an exception when the length of the side is negative, which is not
+     * possible
+     *
+     * @param side
+     * @return
+     */
     public double areaOfSquare (double side) {
         double area = 0;
         if (side < 0){
@@ -35,9 +41,16 @@ public class ForLoop {
         area = side * side;
         return area;
     }
-    /* areaOfRectangle is a function that takes the length and width of a rectangle as an input and multiplies both to
-    return the area of the rectangle. It also throws an exception when the length, width, or both are negative, which
-    is not possible */
+
+    /**
+     * areaOfRectangle is a function that takes the length and width of a rectangle as an input and multiplies both to
+     * return the area of the rectangle. It also throws an exception when the length, width, or both are negative, which
+     * is not possible
+     *
+     * @param length
+     * @param width
+     * @return
+     */
     public double areaOfRectangle (double length, double width) {
         double area = 0;
         if (length < 0) {
@@ -49,6 +62,11 @@ public class ForLoop {
             area = length * width;
         return area;
     }
+
+    /**
+     * @param radius
+     * @return
+     */
     /* areaOfCircle is a function that takes the radius of a circle as an input and multiplies it by 44/7 to return the
     area of the rectangle. It also throws an exception when the radius is negative, which is not possible
      */
