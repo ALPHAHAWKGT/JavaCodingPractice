@@ -1,8 +1,13 @@
 public class Arrays {
     public static void main (String [] args) {
-    System.out.println("Hello World");
+    //System.out.println("Hello World");
     Arrays object = new Arrays ();
-    object.arrayInitialize(6);
+    //object.arrayInitialize(6);
+        int [] arr = new int [3];
+        arr[0] = 1;
+        arr[1] = 7;
+        arr[2] = 14;
+        System.out.println(object.arrayAverage(arr));
     }
     public void arrayInitialize(int length) {
         int [] arr = new int [length];
@@ -14,6 +19,15 @@ public class Arrays {
             System.out.println(arr[i]);
         }
     }
+    public double arrayAverage(int [] arr) {
+        //System.out.println(arr.length);
+        double sum = 0;
+        for (int i = 0; i < arr.length; i++) {
+            sum = sum + arr[i];
+        }
+    return sum/arr.length;
+    }
+
 }
 /*
 1. Given an array, write a method that calculates the average of an array.
@@ -25,3 +39,4 @@ Hint: String [] array = new String [Length]
 If word is not one of these, will print not found. If exists, will print found.
 Use "Dhruv".equals("Anip") method
  */
+
