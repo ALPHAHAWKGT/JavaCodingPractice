@@ -25,4 +25,5 @@ public class Cars {
         hondaAccord2013.properties();
     }
 }
-//Create Class Plane and create 2 planes
+//TODO type and price
+
